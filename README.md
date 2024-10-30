@@ -39,8 +39,6 @@ Microsoft Graph > Delegated permissions: User.Read
 Configure Application
 In the project, open appsettings.json and update the following section with your Tenant ID, Client ID, and Client Secret from the Azure AD setup:
 
-json
-Copy code
 "AzureAd": {
   "Instance": "https://login.microsoftonline.com/",
   "Domain": "<your-domain>.onmicrosoft.com",
@@ -49,6 +47,7 @@ Copy code
   "ClientSecret": "<Your-Client-Secret>",
   "CallbackPath": "/signin-oidc"
 }
+
 Save the appsettings.json file.
 
 Running the Application
