@@ -14,7 +14,7 @@ This repository contains a sample project demonstrating how to set up **ASP.NET 
 
 ## Prerequisites
 
-- [.NET 6 SDK](https://dotnet.microsoft.com/download/dotnet/6.0) or later
+- [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/6.0) or later
 - [Azure AD Tenant](https://portal.azure.com/) (You need an Azure account to create a tenant)
 - [Visual Studio](https://visualstudio.microsoft.com/) or [Visual Studio Code](https://code.visualstudio.com/)
 
