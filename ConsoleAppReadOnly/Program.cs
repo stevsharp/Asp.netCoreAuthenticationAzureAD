@@ -3,7 +3,7 @@ using Microsoft.IdentityModel.Clients.ActiveDirectory;
 
 using System.Net;
 /// <summary>
-/// https://www.youtube.com/watch?v=pS1hER46PQI&list=PLW6IC4y81fVvqxtGevoDkut23QA2mvPnb&index=3
+/// 
 /// </summary>
 class Program
 {
