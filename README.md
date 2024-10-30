@@ -26,3 +26,39 @@ This repository contains a sample project demonstrating how to set up **ASP.NET 
    ```bash
    git clone https://github.com/stevsharp/Asp.netCoreAuthenticationAzureAD.git
    cd Asp.netCoreAuthenticationAzureAD
+Azure AD Setup
+To configure Azure Active Directory for this application:
+
+Log in to the Azure portal.
+Navigate to Azure Active Directory > App registrations > New registration.
+Enter a name for your app, select Accounts in this organizational directory only, and set the Redirect URI to https://localhost:5001/signin-oidc.
+After registering the app, note the Application (client) ID and Directory (tenant) ID.
+Under Certificates & secrets, create a new client secret and note the generated value (you'll need it for configuration).
+Under API permissions, add the following:
+Microsoft Graph > Delegated permissions: User.Read
+Configure Application
+In the project, open appsettings.json and update the following section with your Tenant ID, Client ID, and Client Secret from the Azure AD setup:
+
+json
+Copy code
+"AzureAd": {
+  "Instance": "https://login.microsoftonline.com/",
+  "Domain": "<your-domain>.onmicrosoft.com",
+  "TenantId": "<Your-Tenant-ID>",
+  "ClientId": "<Your-Client-ID>",
+  "ClientSecret": "<Your-Client-Secret>",
+  "CallbackPath": "/signin-oidc"
+}
+Save the appsettings.json file.
+
+Running the Application
+Open the project in Visual Studio or Visual Studio Code.
+
+Run the application by pressing F5 or using the command:
+
+bash
+Copy code
+dotnet run
+Navigate to https://localhost:5001 in your browser. You should be redirected to the Azure AD login page for authentication.
+
+Once authenticated, you’ll be redirected back to the application with access to secure parts of the application.
