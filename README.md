@@ -61,3 +61,7 @@ dotnet run
 Navigate to https://localhost:5001 in your browser. You should be redirected to the Azure AD login page for authentication.
 
 Once authenticated, you’ll be redirected back to the application with access to secure parts of the application.
+
+## Connect with Me
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue)](https://www.linkedin.com/in/spyros-ponaris-913a6937/)
